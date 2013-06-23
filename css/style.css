@@ -22,7 +22,7 @@ a {
 	margin-top: 40px !important;
 }
 .btn-wrapper a {
-	text-decoration: none !important!important;;
+	text-decoration: none !important!;
 	padding-left: 10px !important;
 	color: #000 !important;
 }
@@ -37,7 +37,11 @@ a {
 	font-weight: 300;
 	line-height: 30px;
 }
- 
+
+.link:hover {
+	text-decoration: underline !important;
+}
+
 .page-header {
 	border-bottom-color:#EEEEEE;
 	border-bottom-style:solid;
