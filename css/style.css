@@ -11,15 +11,13 @@ body {
  }
  
  
+   .sub-head {
+ 
+  font-size:21.5px !important;
+}
    
    
-   
- .contact p {
- color: #000000;
- font-size: 19px;
- font-weight: 300;
- line-height: 30px;
- }
+ 
   .abt p {
  color: #000000;
  font-size: 17px;
