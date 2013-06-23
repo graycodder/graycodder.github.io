@@ -8,8 +8,13 @@ body {
 	font-family:proxima-nova, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size:14px;
 	line-height:20px;
+	
 }
+.navbar-fixed-top {
  
+ z-index:1000 !important;
+ background-color:#DCDCDC !important;
+}
 a {
   color:#000 !important;
   text-decoration:none !important;
@@ -30,7 +35,9 @@ a {
 	color: #878787 !important;
 }
    
- 
+.aboutus{
+	margin-top:200px !important;
+} 
 .abt p {
 	color: #000000;
 	font-size: 17px;
