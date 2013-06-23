@@ -20,6 +20,12 @@ body {
  font-weight: 300;
  line-height: 30px;
  }
+  .abt p {
+ color: #000000;
+ font-size: 17px;
+ font-weight: 300;
+ line-height: 30px;
+ }
  
 .page-header {
   border-bottom-color:#EEEEEE;
