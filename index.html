@@ -1,183 +1,73 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<title>
-		GrayCodder
-	</title>
-    
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="">
-	<meta name="author" content="">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+
+<script src="jquery-1.7.2.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".flip").click(function () {
+            $("p").slideUp("fast");
+        });
+    });
 	
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/bootstrap-responsive.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
+	</script>
+
+
+
+<style type="text/css">
+<!--
+
+
+-->
+
+div.panel,td.flip
+{
+	margin:0px;
+	padding:5px;
+	text-align:center;
+	border:solid 1px #c3c3c3;
 	
-	<!-- <link href="css/style.css" rel="stylesheet"> -->
-	<!-- <link href="css/docs.css" rel="stylesheet"> -->
-	<script src="js/jquery.min.js"></script>
-	<script src="js/custom.js"></script>
-	<link href='http://fonts.googleapis.com/css?family=Average|Advent+Pro' rel='stylesheet' type='text/css'>
-   	<style type="text/css">
-   		body {
-   			font-family: 'Average', serif;
-   			background: #ecf0f1;
-   		}
-   		.header-wrapper {
-			background: #2980b9;
-			border-bottom: 4px solid #3498db;   
-   		}
-   		.header {
-   			margin-top: 30px;
-   						
-   		}
-		.mainhead h3{
-			font-size: 22px;
-			margin: 20px 0 0 10px;
-			color: #fff;
-			text-shadow: 2px 2px 1px rgba(150, 150, 150, .5);
-		}
-		.mainhead h1 a{
-			color: #fff;
-			text-decoration: none;				
-		}
-		.mainhead h1{			
-			font-size: 70px;
-			font-family: 'Advent Pro', sans-serif;
-			color: #fff;
-			text-shadow: 2px 2px 1px rgba(150, 150, 150, .5);
-		}
-		.mainhead p {
-			font-size: 20px;
-		}
-		.topmenu li {
-			float: left;
-			margin-right: 10px;
-			padding: 13px;			
-		}
-		.topmenu {
-			margin: 20px 0 0 0;
-		}
-		.topmenu li a {
-			font-size: 16px;
-			color: #fff;
-			font-weight: bold;
-			cursor: pointer;
-		}
-		.img-content {
-			text-align: center;
-			
-		}
-		.about {
-			border-top: 3px solid #fff;
-			background:#bdc3c7;
-			font-size: 16px;
-			padding: 15px 0;	
-		}	
-		.contact {
-			border-top: 3px solid #fff;
-			background:#b694c4;
-			font-size: 16px;
-			padding: 15px 0;
-		}
-		footer {
-				padding: 20px;
-		}
-		.btn-wrapper {
-			padding-left: 10px;
-			padding-bottom: 10px;
-			text-align: center;
-		}
-		.btn-wrapper a {
-			color: #000000;    		
-    		text-decoration: none;    	
-		}
-   	</style>
+	
+}
+.panel
+{
+height:50px;
+display:none;
+}
+#graycodderhead {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 200px;
+	font-style: normal;
+	line-height: normal;
+	color: #000;
+	text-decoration: blink;
+	height: 75px;
+	width: 300px;
+	position: relative;
+	padding-left: 175px;
+}
+#betterworld {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 24px;
+	font-style: normal;
+	color: #000;
+	padding-left: 500px;
+}
+</style>
 </head>
-<body>
-	<div class="row-fluid header-wrapper">
-		<div class="header container">
-			<div class="span8 mainhead">
-				<h1><a href="#">Gray Codder</a></h1>
-				<h3>experience simplicity.</h3>
-			</div>
-			<div class="span4">
-				<ul class="unstyled topmenu">
-					<li><a herf="#">Home</a></li>
-					<li><a herf="#">Services</a></li>
-					<li><a herf="#about">About</a></li>
-					<li><a herf="#contact">Contact</a></li>
-				</ul>
-			</div>
-		</div>		
-	</div>
-	<div class="row-fluid img-content">		
-		<img src="img/app1.png" alt="theimage" />
-	</div>			
-			<div class="row-fluid about" id="about">
-						<div class="container">
-							<h2>About Us</h2>
-							<p>GrayCodder is an innovative developer of mobile applications and Web applications. </p>
-							<div class="row-fluid">
-							<div class="span3">
-								<h4>Adapted technologies</h3>
-								<ul class="unstyled">
-									<li>iPhone</li>
-									<li>Android</li>
-									<li>PHP</li>
-									<li>ASP.NET</li>
-									<li>etc</li>
-								</ul>
-							</div>
-							<div class="span3">
-								<h4>Quality Policy</h3>
-								<p> "Delighiting Customers by providing excellent quality, cost effective and innovative software solutions"</p>
-							</div>
-							<div class="span3">
-								<h4>Beliefs</h3>
-								<p> "User experience than profit"</p>
-								<p> "Bussines means "Quality service" than a well suited smile"</p>
-							</div>
-							<div class="span3">
-								<h4>Vision</h3>
-								<p> GrayCodder's core values are integrity, excellent customer service, creativity, pioneering technology and respect for the individual. The overall goal shall be to create a common platform for our continuous business development  relationships and competence being our competitive strength. Our core values provide us with a means of not only guiding us but also evaluating our operations, our planning, and our vision for the future.</p>
-							</div>
-							</div>							
-						</div>
-					</div>
-					<div class="row-fluid contact" id="contact">		
-				
-					<div class="container">						
-							<h1>Contact Us</h1>						
-					
-							<div class="contacts">
-								<address>
-									<strong>Graycodder IT Solutions</strong><br>
-									Munayath Building, T.P.Road,38/261,<br>
-									Kathrikkadavu,Near.A.K.G. Manthiram,<br>Kaloor P.O<br>
-									<abbr title="Phone">Phone:</abbr> (484) 644-4425<br>
-								</address>
-								<address>
-									<strong>Email</strong><br>
-									<a class="link" href="mailto:graycodder@gmail.com">graycodder@gmail.com</a>
-								</address>
-								<p class="pull-right link"><a id="contact-back" href="#top">Back to top</a></p>			
-							</div>
-						
-					</div>
-					
-					</div>
-   	
-		
-		<footer>
-			<div class="btn-wrapper">
-				<a href="http://twitter.com/graycodder" title="follow"><i class="icon-twitter icon-4x"></i></a>
-				<a href="http://facebook.com/graycodder" title="like"><i class="icon-facebook icon-4x"></i></a>	           
-			</div>
-			<div class="container">
-				<p style="text-align: center;">&copy; graycodder 2013</p>
-			</div>
-		</footer>
-	</body>
-	
-	 </html>
+
+<body >
+<div id="graycodderhead">
+  <p> GrayCodder
+</p>
+</div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p padding-left: 300px;>&nbsp;</p>
+<p padding-left: 300px;>&nbsp;</p>
+<p padding-left: 300px;>&nbsp;</p>
+<p padding-left: 300px; id="betterworld">Coder For The Better World</p>
+</body>
+</html>
