@@ -1,40 +1,22 @@
-<html>
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Untitled Document</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=550, initial-scale=1">
+    
+    <link rel="stylesheet" href="css/demo.css">
+    <link rel="stylesheet" href="css/jquery.flipster.css">
+    <link rel="stylesheet" href="css/flipsternavtabs.css">
+</head>
+<body>
 
-<script src="jquery-1.7.2.js" type="text/javascript"></script>
-<script type="text/javascript">
-    $(document).ready(function () {
-        $(".flip").click(function () {
-            $("p").slideUp("fast");
-        });
-    });
-	
-	</script>
-
-
-
-<style type="text/css">
-<!--
-
-
--->
-
-div.panel,td.flip
-{
-	margin:0px;
-	padding:5px;
-	text-align:center;
-	border:solid 1px #c3c3c3;
-	
-	
-}
-.panel
-{
-height:50px;
-display:none;
-}
+<style>
 #graycodderhead {
 	font-family: "Times New Roman", Times, serif;
 	font-size: 200px;
@@ -49,11 +31,22 @@ display:none;
 }
 #betterworld {
 	font-family: "Times New Roman", Times, serif;
-	font-size: 24px;
+	font-size: 36px;
 	font-style: normal;
 	color: #000;
 	padding-left: 500px;
 }
+#aboutfont {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 24px;
+}
+#koko
+{
+color:black;
+text-align:center;
+font-size: 46px;
+}
+
 </style>
 </head>
 
@@ -68,5 +61,98 @@ display:none;
 <p padding-left: 300px;>&nbsp;</p>
 <p padding-left: 300px;>&nbsp;</p>
 <p padding-left: 300px; id="betterworld">Coder For The Better World</p>
+
+<p padding-left: 300px;>&nbsp;</p>
+<p align="center" id="aboutfont" padding-left: 300px;>I born in 2013,I am a team including members having large repository of latest </p>
+<p align="center" padding-left: 300px; id="aboutfont">Web and Mobile Application development Knowledge and  Experience</p>
+
+
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p id="koko"><a href=#Coverflow id="koko">About</a></p>
+<p>&nbsp;</p>
+<div >
+	<div >
+	
+
+<!-- Flipster List -->	
+<div id="Coverflow">
+		  <ul class="flip-items">
+<li id="Coverflow-1" title="GrayCodder" data-flip-category="Our Process">
+		  		<img src="img/process.jpeg">
+		  	</li>
+<li id="Coverflow-2" title="GrayCodder" data-flip-category="Services">
+		  		<img src="img/services.jpeg">
+		  	</li>
+<li id="Coverflow-3" title="GrayCodder" data-flip-category="Contact">
+		  		<img src="img/contact.jpeg">
+		  	</li>
+		  	
+		  </ul>
+		</div>
+<!-- End Flipster List -->
+
+	  <h3></h3>
+	  <p>
+	    <!-- Flipster List -->	
+  </p>
+	  <p>&nbsp;</p>
+	  <p>&nbsp;</p>
+  </div>
+</div>
+
+<p>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="src/js/jquery.flipster.js"></script>
+<p id="koko"><a href="#top" id="koko">Home</a>
+</p></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<script>
+<!--
+
+	$(function(){
+		
+		$("#Coverflow").flipster({
+			itemContainer: 			'ul', // Container for the flippin' items.
+			itemSelector: 			'li', // Selector for children of itemContainer to flip
+			style:							'coverflow', // Switch between 'coverflow' or 'carousel' display styles
+			start: 							'center', // Starting item. Set to 0 to start at the first, 'center' to start in the middle or the index of the item you want to start with.
+			
+			enableKeyboard: 		true, // Enable left/right arrow navigation
+			enableMousewheel: 	true, // Enable scrollwheel navigation (up = left, down = right)
+			enableTouch: 				true, // Enable swipe navigation for touch devices
+			
+			enableNav: 					true, // If true, flipster will insert an unordered list of the slides
+			enableNavButtons: 	true, // If true, flipster will insert Previous / Next buttons
+			
+			onItemSwitch: 			function(){}, // Callback function when items are switches
+		});
+			
+		$("#Carousel").flipster({
+			itemContainer: 			'ul', // Container for the flippin' items.
+			itemSelector: 			'li', // Selector for children of itemContainer to flip
+			style:							'carousel', // Switch between 'coverflow' or 'carousel' display styles
+			start: 							0, // Starting item. Set to 0 to start at the first, 'center' to start in the middle or the index of the item you want to start with.
+			
+			enableKeyboard: 		true, // Enable left/right arrow navigation
+			enableMousewheel: 	true, // Enable scrollwheel navigation (up = left, down = right)
+			enableTouch: 				true, // Enable swipe navigation for touch devices
+			
+			enableNav: 					true, // If true, flipster will insert an unordered list of the slides
+			enableNavButtons: 	true, // If true, flipster will insert Previous / Next buttons
+			
+			onItemSwitch: 			function(){}, // Callback function when items are switches
+		});
+	
+	});
+
+-->
+</script>
 </body>
 </html>
