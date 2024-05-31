@@ -1,158 +1,42 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html>
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=550, initial-scale=1">
-    
-    <link rel="stylesheet" href="css/demo.css">
-    <link rel="stylesheet" href="css/jquery.flipster.css">
-    <link rel="stylesheet" href="css/flipsternavtabs.css">
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+  <base href="/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="graycodder">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>graycodder</title>
+  <link rel="manifest" href="manifest.json">
+  
 </head>
 <body>
 
-<style>
-#graycodderhead {
-	font-family: "Times New Roman", Times, serif;
-	font-size: 200px;
-	font-style: normal;
-	line-height: normal;
-	color: #000;
-	text-decoration: blink;
-	height: 75px;
-	width: 300px;
-	position: relative;
-	padding-left: 175px;
-}
-#betterworld {
-	font-family: "Times New Roman", Times, serif;
-	font-size: 36px;
-	font-style: normal;
-	color: #000;
-	padding-left: 500px;
-}
-#aboutfont {
-	font-family: "Times New Roman", Times, serif;
-	font-size: 24px;
-}
-#koko
-{
-color:black;
-text-align:center;
-font-size: 46px;
-}
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScIJ1AXSsTME6XSvXXgDuzCF9xMCYYHdeiGtY9VNnf4Xdi3rw/viewform?embedded=true" width="640" height="3784" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
-</style>
-</head>
-
-<body >
-<div id="graycodderhead">
-  <p> GrayCodder
-</p>
-</div>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p padding-left: 300px;>&nbsp;</p>
-<p padding-left: 300px;>&nbsp;</p>
-<p padding-left: 300px;>&nbsp;</p>
-<p padding-left: 300px; id="betterworld">Coder For The Better World</p>
-
-<p padding-left: 300px;>&nbsp;</p>
-<p align="center" id="aboutfont" padding-left: 300px;>I born in 2013,I am a team including members having large repository of latest </p>
-<p align="center" padding-left: 300px; id="aboutfont">Web and Mobile Application development Knowledge and  Experience</p>
-
-
-
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p id="koko"><a href=#Coverflow id="koko">About</a></p>
-<p>&nbsp;</p>
-<div >
-	<div >
-	
-
-<!-- Flipster List -->	
-<div id="Coverflow">
-		  <ul class="flip-items">
-<li id="Coverflow-1" title="GrayCodder" data-flip-category="Our Process">
-		  		<img src="https://cloud.githubusercontent.com/assets/4777290/2935533/2b4ab344-d816-11e3-9917-c9b70ea22c5f.jpeg">
-		  	</li>
-<li id="Coverflow-2" title="GrayCodder" data-flip-category="Services">
-		  		<img src="https://cloud.githubusercontent.com/assets/4777290/2935537/6787859e-d816-11e3-85b2-2d8bad344a77.jpeg">
-		  	</li>
-<li id="Coverflow-3" title="GrayCodder" data-flip-category="Contact">
-		  		<img src="https://cloud.githubusercontent.com/assets/4777290/2935501/a95e5328-d814-11e3-98c6-2e6608ca7536.jpeg">
-		  	</li>
-		  	
-		  </ul>
-		</div>
-<!-- End Flipster List -->
-
-	  <h3></h3>
-	  <p>
-	    <!-- Flipster List -->	
-  </p>
-	  <p>&nbsp;</p>
-	  <p>&nbsp;</p>
-  </div>
-</div>
-
-<p>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script src="js/jquery.flipster.js"></script>
-<p id="koko"><a href="#top" id="koko">Home</a>
-</p></p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-
-<script>
-<!--
-
-	$(function(){
-		
-		$("#Coverflow").flipster({
-			itemContainer: 			'ul', // Container for the flippin' items.
-			itemSelector: 			'li', // Selector for children of itemContainer to flip
-			style:							'coverflow', // Switch between 'coverflow' or 'carousel' display styles
-			start: 							'center', // Starting item. Set to 0 to start at the first, 'center' to start in the middle or the index of the item you want to start with.
-			
-			enableKeyboard: 		true, // Enable left/right arrow navigation
-			enableMousewheel: 	true, // Enable scrollwheel navigation (up = left, down = right)
-			enableTouch: 				true, // Enable swipe navigation for touch devices
-			
-			enableNav: 					true, // If true, flipster will insert an unordered list of the slides
-			enableNavButtons: 	true, // If true, flipster will insert Previous / Next buttons
-			
-			onItemSwitch: 			function(){}, // Callback function when items are switches
-		});
-			
-		$("#Carousel").flipster({
-			itemContainer: 			'ul', // Container for the flippin' items.
-			itemSelector: 			'li', // Selector for children of itemContainer to flip
-			style:							'carousel', // Switch between 'coverflow' or 'carousel' display styles
-			start: 							0, // Starting item. Set to 0 to start at the first, 'center' to start in the middle or the index of the item you want to start with.
-			
-			enableKeyboard: 		true, // Enable left/right arrow navigation
-			enableMousewheel: 	true, // Enable scrollwheel navigation (up = left, down = right)
-			enableTouch: 				true, // Enable swipe navigation for touch devices
-			
-			enableNav: 					true, // If true, flipster will insert an unordered list of the slides
-			enableNavButtons: 	true, // If true, flipster will insert Previous / Next buttons
-			
-			onItemSwitch: 			function(){}, // Callback function when items are switches
-		});
-	
-	});
-
--->
-</script>
+  <!-- <script src="flutter_bootstrap.js" async></script> -->
 </body>
 </html>
