@@ -398,17 +398,7 @@ button {
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
 }
-.about_taital::after {
-    content: '';
-    position: absolute;
-    width: 193px;
-    height: 2px;
-    background-color: #252525;
-    left: initial;
-    right: 0px;
-    top: 44%;
-    z-index: -1;
-}
+
 .about_text {
     width: 100%;
     float: left;
@@ -470,7 +460,7 @@ button {
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
 }
-.services_taital::after {
+/* .services_taital::after {
     content: '';
     position: absolute;
     width: 193px;
@@ -479,7 +469,7 @@ button {
     left: initial;
     right: 0px;
     top: 44%;
-}
+} */
 .services_section_2 {
     width: 100%;
     float: left;
@@ -654,7 +644,7 @@ button {
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
 }
-.contact_taital::after {
+/* .contact_taital::after {
     content: '';
     position: absolute;
     width: 193px;
@@ -663,7 +653,7 @@ button {
     left: initial;
     right: 0px;
     top: 44%;
-}
+} */
 .contact_text {
     width: 100%;
     float: left;

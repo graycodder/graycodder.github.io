@@ -279,9 +279,6 @@
     width: 60%;
     font-size: 30px;
 }
-.about_taital::after {
-    width: 153px;
-}
 .about_image {
     padding-left: 0px;
     padding-top: 15px;
@@ -372,9 +369,7 @@
     width: 100%;
     font-size: 30px;
 }
-.about_taital::after {
-    width: 153px;
-}
+
 .about_image {
     padding-left: 0px;
     padding-top: 15px;
