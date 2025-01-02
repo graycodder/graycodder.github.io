@@ -221,16 +221,37 @@ button {
 
 /* header section start */
 
+/* Wrapper for video to ensure responsiveness */
 .header_section {
+    position: relative;
     width: 100%;
-    float: left;
-    background-image: url(../images/banner-bg.png);
-    height: auto;
-    background-size: 100%;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Ensures no extra scrollbars for the video */
 }
 
+/* Background video styles */
+.background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%; /* Full width */
+    height: auto; /* Maintains aspect ratio */
+    transform: translate(-50%, -50%); /* Centers the video */
+    object-fit: cover; /* Ensures the video covers the entire section */
+    z-index: -1; /* Sends the video to the background */
+}
+
+/* Media query for extra small devices */
+@media (max-width: 768px) {
+    .background-video {
+        width: auto; /* Adjust for smaller widths */
+        height: 100%; /* Ensure height is covered */
+    }
+}
+
+
 .bg-light {
-    background-image: url(../images/header-bg.png);
+    background-image: url(../images/header-bg.pn);
     background-color: transparent !important;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -245,13 +266,13 @@ button {
 }
 .navbar-light .navbar-nav .nav-link:focus, 
 .navbar-light .navbar-nav .nav-link:hover {
-    color: #070707;
+    color:black;
 }
 .navbar-light .navbar-nav .active>.nav-link, 
 .navbar-light .navbar-nav .nav-link.active, 
 .navbar-light .navbar-nav .nav-link.show, 
 .navbar-light .navbar-nav .show>.nav-link {
-    color: #070707;
+    color: black;
 }
 .logo{ 
     width: 25%;
@@ -555,14 +576,26 @@ button {
     float: left;
     margin-top: 40px;
 }
-.events_bg {
+.events_video {
     width: 100%;
-    float: left;
-    background-image: url(../images/events-bg.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    padding: 160px 0px;
-}
+    position: relative;
+    overflow: hidden;
+ }
+ 
+ .responsive_video {
+    width: 100%;
+    height: auto;
+    max-height: 500px; /* Set a maximum height if needed */
+    display: block;
+    border-radius: 8px; /* Optional: Add rounded corners */
+ }
+ 
+ @media screen and (max-width: 768px) {
+    .responsive_video {
+       max-height: 300px; /* Adjust for smaller screens */
+    }
+ }
+ 
 
 .play_icon {
     width: 200px;
