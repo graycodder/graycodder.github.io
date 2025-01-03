@@ -223,22 +223,37 @@ button {
 
 /* Wrapper for video to ensure responsiveness */
 .header_section {
+    margin: 0;
+    padding: 0;
+    height: auto;
     position: relative;
-    width: 100%;
-    height: 100vh; /* Full viewport height */
+    width: auto; /* Full viewport height This Line Fix the Error*/
     overflow: hidden; /* Ensures no extra scrollbars for the video */
 }
 
 /* Background video styles */
 .background-video {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%; /* Full width */
-    height: auto; /* Maintains aspect ratio */
-    transform: translate(-50%, -50%); /* Centers the video */
-    object-fit: cover; /* Ensures the video covers the entire section */
-    z-index: -1; /* Sends the video to the background */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures video covers the entire section */
+    z-index: -1; /* Places the video behind other elements */
+}
+.navbar {
+    position: relative;
+    z-index: 1; /* Ensures navbar stays on top of the video */
+    background: rgba(255, 255, 255, 0.8); /* Add slight transparency */
+    padding: 10px 20px;
+    box-shadow: 0px 4px 6px rgba(1, 1, 1, 0.2);
+}
+.navbar-nav .nav-link {
+    color: #333;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 15px;
 }
 
 /* Media query for extra small devices */
@@ -294,12 +309,12 @@ button {
 .banner_section {
     padding-top: 40px;
     padding-bottom: 70px;
-    border-bottom: 80px solid #13a25d;
+    border-bottom: 80px solid none;
 }
 .banner_main {
     width: 44%;
     float: left;
-    background: #fff;
+    background: transparent;
     padding: 40px;
 }
 
@@ -307,7 +322,7 @@ button {
     width: 100%;
     float: left;
     font-size: 48px;
-    color: #060707;
+    color: black;
     font-weight: bold;
 }
 .banner_text {
@@ -338,7 +353,7 @@ button {
 }
 .contact_bt a:hover {
     color: #ffffff;
-    background-color: #13a25d;
+    background-color: black;
 }
 .contact_bt.active a {
     color: #ffffff;
@@ -432,7 +447,8 @@ button {
 .lorem_text {
     width: 100%;
     float: left;
-    font-size: 16px;
+    font-weight: bold;
+    font-size: 25px;
     color: #0f0f0f;
     margin: 0px;
     font-family: 'Roboto', sans-serif;
@@ -999,4 +1015,8 @@ textarea#comment::placeholder {
     font-size: 30px;
     font-weight: bold;
     text-decoration: none;
+}
+/* Color of Text in readmore*/
+.custom-text-color {
+    color: black; /* Change this to your desired color */
 }
