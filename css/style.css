@@ -422,7 +422,7 @@ button {
     background-color: #13a25d;
     left: 0px;
     right: initial;
-    top: 0;
+
     z-index: -1;
 }
 
@@ -450,18 +450,34 @@ button {
     font-weight: bold;
     font-size: 25px;
     color: #0f0f0f;
-    margin: 0px;
+    margin: 50px 0 0 0;
     font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
 }
+.about_image {
+    display: flex; /* Enable Flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100%; /* Ensure the height matches the parent container */
+}
+
+.about_image img {
+    max-width: 100%; /* Prevent image from exceeding its container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
 .about_taital_main {
     width: 100%;
     float: left;
-    padding-top: 172px;
+    padding-top:0;
+    justify-content: center; /* Center align the image */
+    align-items: center; /* Center align vertically */
+    height: 100%; /* Ensure it fits the column height */
 }
 .read_bt {
     width: 170px;
     float: right;
-    padding-top: 64px;
+    padding-top: 30px;
 }
 .read_bt a {
     width: 100%;
