@@ -1036,3 +1036,30 @@ textarea#comment::placeholder {
 .custom-text-color {
     color: black; /* Change this to your desired color */
 }
+/* For Sent button in Contact us*/
+.send_bt {
+    display: inline-block;
+    background: linear-gradient(90deg, #ff7e5f, #feb47b); /* Modern gradient */
+    color: #ffffff; /* White text */
+    padding: 12px 24px; /* Adjust padding for better look */
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase; /* Modern touch */
+    text-align: center;
+    border: none;
+    border-radius: 30px; /* Rounded edges for a clean look */
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: all 0.3s ease-in-out; /* Smooth transitions */
+}
+
+.send_bt:hover {
+    background: linear-gradient(90deg, #feb47b, #ff7e5f); /* Reverse gradient on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15); /* Enhance shadow on hover */
+}
+
+.send_bt:active {
+    transform: translateY(1px); /* Subtle press effect */
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2); /* Reduce shadow on click */
+}
