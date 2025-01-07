@@ -269,7 +269,7 @@ button {
 
 
 .bg-light {
-    background-image: url(../images/header-bg.pn);
+    background-image: url(../images/);
     background-color: transparent !important;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -611,11 +611,53 @@ button {
     float: left;
     margin-top: 40px;
 }
+/* Base Styles */
 .events_video {
-    width: 100%;
+    width: 90%; /* Default width to ensure it fits smaller screens */
+    max-width: 800px; /* Prevent the video from being too large on bigger screens */
+    margin: 20px auto; /* Center the container horizontally with spacing */
     position: relative;
     overflow: hidden;
- }
+    border-radius: 15px; /* Rounded corners for a modern style */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.events_video video {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    border-radius: 15px; /* Match container's rounded corners */
+    outline: none;
+}
+
+/* Maintain Aspect Ratio */
+.events_video::before {
+    content: '';
+    display: block;
+    padding-top: 56.25%; /* Maintain 16:9 aspect ratio */
+}
+
+.events_video video {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Media Query for Tablets */
+@media (min-width: 768px) {
+    .events_video {
+        width: 80%; /* Slightly larger for tablets */
+    }
+}
+
+/* Media Query for Desktops */
+@media (min-width: 1024px) {
+    .events_video {
+        width: 70%; /* Larger width for desktop screens */
+        max-width: 1000px; /* Increase max-width for larger displays */
+    }
+}
+
  
  .responsive_video {
     width: 100%;
