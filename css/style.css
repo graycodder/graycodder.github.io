@@ -234,11 +234,14 @@ button {
 /* Background video styles */
 .background-video {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ensures video covers the entire section */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Align the center of the video with the center of the section */
+    width: 100vw; /* Full width of the viewport */
+    height: auto; /* Maintain aspect ratio */
+    min-height: 100%; /* Ensures video covers the height */
+    min-width: 100%; /* Ensures video covers the width */
+    object-fit: cover; /* Ensures video scales properly */
     z-index: -1; /* Places the video behind other elements */
 }
 .navbar {
