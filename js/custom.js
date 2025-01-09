@@ -370,7 +370,7 @@ $(function () {
 
 });
 /* For Loader 
-	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
+-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
 function loaderAnimation() {
     var loader = document.querySelector("#loader")
     setTimeout(function () {
