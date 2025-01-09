@@ -369,8 +369,7 @@ $(function () {
 
 
 });
-/* For Loader 
--- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
+/* For Loader-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
 function loaderAnimation() {
     var loader = document.querySelector("#loader")
     setTimeout(function () {
