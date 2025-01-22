@@ -378,3 +378,31 @@ function loaderAnimation() {
 }
 
 loaderAnimation()
+// This is for Portfolio works start//
+document.addEventListener("DOMContentLoaded", function () {
+    const filterButtons = document.querySelectorAll("#portfolio-flters li");
+    const portfolioItems = document.querySelectorAll(".portfolio-item");
+
+    filterButtons.forEach((button) => {
+        button.addEventListener("click", function () {
+            // Remove 'active' class from all buttons
+            filterButtons.forEach((btn) => btn.classList.remove("active"));
+
+            // Add 'active' class to the clicked button
+            this.classList.add("active");
+
+            // Get the filter value from the clicked button
+            const filter = this.getAttribute("data-filter");
+
+            // Show/hide portfolio items based on the filter
+            portfolioItems.forEach((item) => {
+                if (filter === "*" || item.classList.contains(filter.substring(1))) {
+                    item.style.display = "block"; // Show matching items
+                } else {
+                    item.style.display = "none"; // Hide non-matching items
+                }
+            });
+        });
+    });
+});
+// This is for Portfolio works end //
