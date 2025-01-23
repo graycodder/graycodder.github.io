@@ -369,15 +369,28 @@ $(function () {
 
 
 });
-/* For Loader-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
+// loader Section Start//
 function loaderAnimation() {
-    var loader = document.querySelector("#loader")
-    setTimeout(function () {
-        loader.style.top = "-100%"
-    }, 4200)
+    var loader = document.querySelector("#loader");
+
+    // Check if the loader has already been shown
+    if (!localStorage.getItem("loaderDisplayed")) {
+        // Set a flag in localStorage to indicate the loader has been displayed
+        localStorage.setItem("loaderDisplayed", "true");
+
+        // Show the loader for the first visit
+        setTimeout(function () {
+            loader.style.top = "-100%";
+        }, 4200);
+    } else {
+        // If the loader has already been displayed, immediately hide it
+        loader.style.display = "none";
+    }
 }
 
-loaderAnimation()
+// Call the loader animation function
+loaderAnimation();
+// loader Section End//
 // This is for Portfolio works start//
 document.addEventListener("DOMContentLoaded", function () {
     const filterButtons = document.querySelectorAll("#portfolio-flters li");
