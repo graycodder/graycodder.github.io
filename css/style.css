@@ -1300,7 +1300,7 @@ textarea#comment::placeholder {
     margin-bottom: 16px;
     border-radius: 8px;
     cursor: pointer;
-    transition: background 300ms;
+    
   }
   
   .cookie-btn:hover {
