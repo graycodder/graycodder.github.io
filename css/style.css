@@ -1261,85 +1261,128 @@ textarea#comment::placeholder {
     opacity: 1;
 }
   /*** Project Portfolio Section End***/
- /*** Cookies Section Start ***/
+ /*** 🍪 Cookies Section Start ***/
 .cookie-container {
     position: fixed;
     bottom: -100%;
-    left: 0;
-    right: 0;
-    background: #2f3640;
-    color: #f5f6fa;
-    padding: 20px 32px;
-    box-shadow: 0 -2px 16px rgba(47, 54, 64, 0.39);
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 500px;
+    background: rgba(20, 20, 20, 0.85); /* Glassmorphism */
+    backdrop-filter: blur(15px);
+    color: #ffffff;
+    padding: 24px 32px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-radius: 12px 12px 0 0;
-    transition: 400ms;
+    border-radius: 18px;
+    transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+    opacity: 0;
     z-index: 9999;
-  }
-  
-  .cookie-container.active {
-    bottom: 0;
-  }
-  
-  .cookie-container a {
-    color: #f5f6fa;
-    text-decoration: underline;
-    font-size: 14px;
-    margin-top: 10px;
-  }
-  
-  .cookie-btn {
-    background: #e84118;
-    border: 0;
-    color: #f5f6fa;
-    padding: 12px 48px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+/* 🚀 Active State */
+.cookie-container.active {
+    bottom: 40px;
+    opacity: 1;
+}
+
+/* 🍪 Cookie Message */
+.cookie-container p {
+    font-size: 17px;
+    text-align: center;
+    margin-bottom: 14px;
+    line-height: 1.6;
+    font-weight: 500;
+}
+
+/* 🎨 Animated Gradient Button */
+.cookie-btn {
+    background: linear-gradient(135deg, #ff6b81, #ff4757);
+    border: none;
+    color: white;
+    padding: 14px 50px;
     font-size: 18px;
-    margin-bottom: 16px;
-    border-radius: 8px;
+    font-weight: bold;
+    border-radius: 12px;
     cursor: pointer;
-    
-  }
-  
-  .cookie-btn:hover {
-    background: #c23616;
-  }
-  
-  .cookie-btn:active {
-    background: #e84118;
-  }
-  
-  @media (max-width: 768px) {
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 5px 20px rgba(255, 71, 87, 0.5);
+    position: relative;
+    overflow: hidden;
+}
+
+/* ✨ Neon Glow Effect */
+.cookie-btn::before {
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 10%, transparent 60%);
+    transform: rotate(30deg);
+    transition: 0.4s ease-in-out;
+}
+
+/* 💡 Button Hover Effect */
+.cookie-btn:hover {
+    transform: scale(1.08);
+    background: linear-gradient(135deg, #ff4757, #e84118);
+}
+
+.cookie-btn:hover::before {
+    top: 0;
+    left: 0;
+}
+
+/* ✨ Cookie Link */
+.cookie-container a {
+    color: #ffa502;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 14px;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+.cookie-container a:hover {
+    color: #ffcc00;
+    text-shadow: 0 0 8px rgba(255, 204, 0, 0.7);
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
     .cookie-container {
-      padding: 16px 24px;
-      border-radius: 10px 10px 0 0;
+        padding: 20px 28px;
     }
-  
+
     .cookie-btn {
-      padding: 10px 40px;
-      font-size: 16px;
+        padding: 12px 40px;
+        font-size: 16px;
     }
-  
+
     .cookie-container a {
-      font-size: 12px;
+        font-size: 13px;
     }
-  }
-  
-  @media (max-width: 480px) {
+}
+
+@media (max-width: 480px) {
     .cookie-container {
-      padding: 12px 16px;
-      border-radius: 8px 8px 0 0;
+        padding: 16px 20px;
+        border-radius: 14px;
     }
-  
+
     .cookie-btn {
-      padding: 8px 32px;
-      font-size: 14px;
+        padding: 10px 36px;
+        font-size: 15px;
     }
-  
+
     .cookie-container a {
-      font-size: 10px;
+        font-size: 12px;
     }
-  }
-  /*** Cookies Section End***/
+}
+/*** 🍪 Cookies Section End ***/
