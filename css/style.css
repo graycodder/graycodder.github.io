@@ -1645,3 +1645,78 @@ textarea#comment::placeholder {
   }
   
 /* Download button section end */
+
+/* Custom Styles for Image Slider  Start*/
+#imageSlider {
+    max-width: 90%;
+    margin: auto;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    background: white;
+}
+
+.carousel-inner {
+    border-radius: 10px;
+}
+
+.carousel-inner img {
+    width: 100%;  /* Ensures responsiveness */
+    max-width: 269px; /* Restricts max width */
+    height: 592px; /* Fixed height */
+    object-fit: cover; /* Ensures images fill the space properly */
+    margin: 0 auto; /* Centers the images */
+   
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 40px;
+    height: 40px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-control-prev {
+    left: 10px;
+}
+
+.carousel-control-next {
+    right: 10px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(100%);
+    width: 20px;
+    height: 20px;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    #imageSlider {
+        max-width: 95%;
+        border-radius: 8px;
+    }
+    .carousel-inner img {
+        height: auto;
+        aspect-ratio: 269 / 592;
+        max-height: 70vh;
+    }
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 30px;
+        height: 30px;
+    }
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        width: 15px;
+        height: 15px;
+    }
+}
+/* Custom Styles for Image Slider End*/
