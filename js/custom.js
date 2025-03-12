@@ -434,3 +434,22 @@ setTimeout(() => {
   }
 }, 2000);
 // Cookies Section End//
+document.addEventListener("DOMContentLoaded", function () {
+    const slider = document.querySelector(".custom-slider");
+    const prevBtn = document.getElementById("customPrevBtn");
+    const nextBtn = document.getElementById("customNextBtn");
+
+    if (slider && prevBtn && nextBtn) {
+        // Scroll Right
+        nextBtn.addEventListener("click", function () {
+            slider.scrollBy({ left: 270, behavior: "smooth" });
+        });
+
+        // Scroll Left
+        prevBtn.addEventListener("click", function () {
+            slider.scrollBy({ left: -270, behavior: "smooth" });
+        });
+    } else {
+        console.error("Slider or buttons not found. Check your HTML structure.");
+    }
+});
