@@ -1613,3 +1613,52 @@ textarea#comment::placeholder {
     }
 }
 /* Custom Styles for Image Slider End*/
+
+.custom-heading {
+    font-size: 28px;
+    color: #333;
+    text-align: left;  /* Aligns text to the left */
+    font-weight: bold;
+    margin: 20px 0 10px 10px;  /* Adds left margin */
+}
+
+/* Responsive Heading */
+@media (max-width: 768px) {
+    .custom-heading {
+        font-size: 24px;
+        margin-left: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .custom-heading {
+        font-size: 20px;
+        margin-left: 5px;
+    }
+}
+
+.custom-paragraph {
+    font-size: 18px;
+    color: #555;
+    text-align: left;  /* Aligns text to the left */
+    max-width: 90%;
+    margin: 10px 10px; /* Adds left margin */
+    line-height: 1.6;
+}
+
+/* Responsive Paragraph */
+@media (max-width: 768px) {
+    .custom-paragraph {
+        font-size: 16px;
+        max-width: 95%;
+        margin-left: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .custom-paragraph {
+        font-size: 14px;
+        max-width: 98%;
+        margin-left: 5px;
+    }
+}
