@@ -17,6 +17,7 @@
       <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
       <!-- style css -->
       <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link href="https://cdn.tailwindcss.com" rel="stylesheet">
       <!-- Responsive-->
       <link rel="stylesheet" href="css/responsive.css">
       <!-- fevicon -->
@@ -112,6 +113,125 @@
     </a>
 </div>
 <!-- Image Slider End -->
+<div class="custom-pricing-container">
+   <div class="custom-toggle-container">
+       <button class="custom-toggle-btn" onclick="togglePricingPlan('monthly')">Pay monthly</button>
+       <button class="custom-toggle-btn" onclick="togglePricingPlan('yearly')">Pay yearly (save 25%)</button>
+   </div>
+
+   <div class="custom-pricing-plans">
+       <div class="custom-plan">
+         <div class="custom-banner green">&#8377;20/month for first 3 months</div>
+         <br><br>
+         <h3 class="plan-title">
+            Basic <span class="custom-tag">Most Popular</span>
+        </h3>
+           <p class="custom-price" id="custom-basic-price">&#8377;1,994 <span>/month</span></p>
+           <p>Card rates starting at 2% 3rd-party payment providers</p>
+           <ul>
+               <li>10 inventory locations</li>
+               <li>24/7 chat support</li>
+               <li>Localized global selling (3 markets)</li>
+               <li>POS Lite</li>
+           </ul>
+           <button class="custom-btn">Try for free</button>
+       </div>
+
+       <div class="custom-plan">
+         <div class="custom-banner green">&#8377;20/month for first 3 months</div>
+         <br><br>
+         <h3 class="plan-title">
+            Shopify
+        </h3>
+           <p class="custom-price" id="custom-shopify-price">&#8377;7,447 <span>/month</span></p>
+           <p>Card rates starting at 1% 3rd-party payment providers</p>
+           <ul>
+               <li>10 inventory locations</li>
+               <li>24/7 chat support</li>
+               <li>Localized global selling (3 markets)</li>
+               <li>5 additional staff accounts</li>
+               <li>POS Lite</li>
+           </ul>
+           <button class="custom-btn">Try for free</button>
+       </div>
+
+       <div class="custom-plan">
+         <div class="custom-banner green">&#8377;20/month for first 3 months</div>
+         <br><br>
+         <h3 class="plan-title">
+           Advanced
+        </h3>
+           <p class="custom-price" id="custom-advanced-price">&#8377;30,164 <span>/month</span></p>
+           <p>Card rates starting at 0.8% 3rd-party payment providers</p>
+           <ul>
+               <li>10 inventory locations</li>
+               <li>Enhanced 24/7 chat support</li>
+               <li>Localized global selling (3 markets) + add markets for $59 USD/mo each</li>
+               <li>15 additional staff accounts</li>
+               <li>10% checkout capacity</li>
+               <li>POS Lite</li>
+           </ul>
+           <button class="custom-btn">Try for free</button>
+       </div>
+
+       <div class="custom-plan premium">
+         <div class="custom-banner blue">Available on a 1- or 3-year term</div>
+       <br><br>
+       <h3 class="plan-title">
+         Plus
+     </h3>
+           <p class="custom-price" id="custom-plus-price">&#8377;1,75,000 <span>/month</span></p>
+           <p>Complete rates for high-volume merchants</p>
+           <ul>
+               <li>200 inventory locations</li>
+               <li>Priority 24/7 phone support</li>
+               <li>Localized global selling (50 markets)</li>
+               <li>Unlimited staff accounts</li>
+               <li>Customizable checkout with 40x capacity</li>
+               <li>Up to 200 POS Pro locations</li>
+               <li>Sell wholesale/B2B</li>
+           </ul>
+           <button class="custom-btn">Get in touch</button>
+       </div>
+   </div>
+</div>
+<script>
+   function togglePricingPlan(type) {
+    const prices = {
+        monthly: {
+            basic: "₹1,994",
+            shopify: "₹7,447",
+            advanced: "₹30,164",
+            plus: "₹1,75,000"
+        },
+        yearly: {
+            basic: "₹1,495",
+            shopify: "₹5,585",
+            advanced: "₹22,623",
+            plus: "₹1,31,250"
+        }
+    };
+
+    // Update pricing values
+    document.getElementById("custom-basic-price").innerHTML = prices[type].basic + " <span>/month</span>";
+    document.getElementById("custom-shopify-price").innerHTML = prices[type].shopify + " <span>/month</span>";
+    document.getElementById("custom-advanced-price").innerHTML = prices[type].advanced + " <span>/month</span>";
+    document.getElementById("custom-plus-price").innerHTML = prices[type].plus + " <span>/month</span>";
+
+    // Remove "active" class from all buttons
+    document.querySelectorAll(".custom-toggle-btn").forEach(btn => btn.classList.remove("active"));
+
+    // Add "active" class to the clicked button
+    document.querySelector(`.custom-toggle-btn[onclick="togglePricingPlan('${type}')"]`).classList.add("active");
+}
+
+// ✅ Set "Pay Monthly" as default on page load
+document.addEventListener("DOMContentLoaded", function() {
+    togglePricingPlan("monthly");  // This ensures "Pay Monthly" is active by default
+});
+
+</script>
+
       
       <!-- events section start -->
       <div class="events_section layout_padding">
