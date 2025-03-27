@@ -120,7 +120,7 @@
 
    <div class="custom-pricing-plans">
        <div class="custom-plan">
-         <div class="custom-banner green">&#8377;20/month for first 3 months</div>
+         <div class="custom-banner green">&#8377;20/month for first 6 months</div>
          <br><br>
          <h3 class="plan-title">
             Basic <span class="custom-tag">Most Popular</span>
@@ -136,7 +136,7 @@
            <button class="custom-btn">Try for free</button>
        </div>
 
-       <div class="custom-plan">
+       <!-- <div class="custom-plan">
          <div class="custom-banner green">&#8377;20/month for first 3 months</div>
          <br><br>
          <h3 class="plan-title">
@@ -152,10 +152,10 @@
                <li>POS Lite</li>
            </ul>
            <button class="custom-btn">Try for free</button>
-       </div>
+       </div> -->
 
        <div class="custom-plan">
-         <div class="custom-banner green">&#8377;20/month for first 3 months</div>
+         <div class="custom-banner green">&#8377;20/month for first 6 months</div>
          <br><br>
          <h3 class="plan-title">
            Advanced
@@ -198,22 +198,22 @@
    function togglePricingPlan(type) {
     const prices = {
         monthly: {
-            basic: "₹1,994",
-            shopify: "₹7,447",
-            advanced: "₹30,164",
-            plus: "₹1,75,000"
+            basic: "₹1,999",
+            // shopify: "₹7,447",
+            advanced: "₹5,999",
+            plus: "₹8,999",
         },
         yearly: {
-            basic: "₹1,495",
-            shopify: "₹5,585",
-            advanced: "₹22,623",
-            plus: "₹1,31,250"
+            basic: "₹23,988",
+            // shopify: "₹5,585",
+            advanced: "₹71,988",
+            plus: "₹1,07,988",
         }
     };
 
     // Update pricing values
     document.getElementById("custom-basic-price").innerHTML = prices[type].basic + " <span>/month</span>";
-    document.getElementById("custom-shopify-price").innerHTML = prices[type].shopify + " <span>/month</span>";
+   //  document.getElementById("custom-shopify-price").innerHTML = prices[type].shopify + " <span>/month</span>";
     document.getElementById("custom-advanced-price").innerHTML = prices[type].advanced + " <span>/month</span>";
     document.getElementById("custom-plus-price").innerHTML = prices[type].plus + " <span>/month</span>";
 
