@@ -1557,8 +1557,8 @@ textarea#comment::placeholder {
 .carousel-inner img {
     width: 100%; /* Ensures responsiveness */
     max-width: 940px; /* Restricts max width to 940px */
-    height: 788px; /* Fixed height */
-    object-fit: cover; /* Ensures images fill the space properly */
+    height:auto; /* Fixed height */
+    object-fit: contain; /* Ensures images fill the space properly */
     display: block;
     margin: 0 auto; /* Centers the images */
 }
