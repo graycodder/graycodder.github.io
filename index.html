@@ -26,12 +26,15 @@
       <!-- Tweaks for older IEs-->
       <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
       <!-- fonts -->
+      <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Roboto:400,700&display=swap" rel="stylesheet">
       <!-- owl stylesheets --> 
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
       <link rel="stylesheet" href="css/owl.carousel.min.css">
       <link rel="stylesheet" href="css/owl.theme.default.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.82/build/spline-viewer.js"></script>
+
    </head>
    <body>
        <!--Cookiea section start -->
@@ -49,8 +52,8 @@
       <!--Loader section start -->
       <div id="loader">
          <h1>GRAYCODDER</h1>
-         <h1>EXPERIENCES</h1>
-         <h1>100% Ai</h1>
+         <h1>Loading..</h1>
+         <h1>Loading...</h1>
      </div>
      <div id="fixed-image">
       <!--Loader section end -->
@@ -58,9 +61,12 @@
       <!--header section start -->
       <div class="header_section">
          <video autoplay muted loop class="background-video">
-            <source src="video/background_video.mp4" type="video/mp4">
+            <source src="video/bakground2.mp4" type="video/mp4">
             Your browser does not support the video tag.
          </video>
+         <!-- Spline Robot (Visual Only)start -->
+         <spline-viewer url="https://prod.spline.design/aZ7mjlSEbtWqOdTU/scene.splinecode"></spline-viewer>
+         <!-- Spline Robot (Visual Only) end -->
          <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="logo"><a href="index.html">Graycodder</a></div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -193,8 +199,29 @@
          <!--banner section end -->
       </div>
       <!--header section end -->
+      <!-- Scroll Reveal Text Sections Start-->
+
+      <section class="reveal-section">
+         <p class="reveal-type" data-bg-color="#353535" data-fg-color="white">
+            We help businesses grow with custom software, <br>
+            mobile apps, websites, <br>and digital marketing strategies <br>
+            that deliver real results. <br><br>
+            From startups to established brands, <br>
+            we provide smart, scalable digital solutions.
+         </p>
+       </section>
+<!-- GSAP + Plugins -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<!-- SplitType -->
+<script src="https://unpkg.com/split-type"></script>
+<!-- Lenis Smooth Scroll -->
+<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.35/bundled/lenis.min.js"></script>
+       
+  <!-- Scroll Reveal Text Sections End-->
+ 
       <!--about section start -->
-      <div class="about_section layout_padding">
+      <!-- <div class="about_section layout_padding">
          <div class="container">
             <h1 class="about_taital">About Us</h1>
             <p class="about_text">"At Graycodder, we redefine success by merging over 14 years of industry expertise with cutting-edge AI innovation. Our mission is to empower businesses with tailored, precision-driven solutions that ensure growth and excellence. From crafting visually stunning, responsive websites optimized for all devices to delivering SEO-focused strategies that boost visibility and attract quality traffic, we position your brand for digital dominance. Our robust e-commerce platforms are designed to maximize sales while offering seamless management, and our end-to-end website development services—spanning strategy, design, development, and maintenance—guarantee your success in a mobile-first, AI-powered world. With Graycodder, your business isn't just keeping up with the future—it’s leading it."</p>
@@ -214,10 +241,10 @@
                </div>
             </div>
          </div>
-      </div>
+      </div> -->
       <!--about section end -->
       <!-- services section start -->
-      <div class="services_section layout_padding">
+      <!-- <div class="services_section layout_padding">
          <div class="container">
             <h1 class="services_taital">AI Solutions We Offer</h1>
             <p class="about_text">Transform your business with our comprehensive AI-powered solutions designed for local businesses</p>
@@ -262,7 +289,7 @@
                </div>
             </div>
          </div>
-      </div>
+      </div> -->
       <!-- services section end -->   
 <!-- Projects Start -->
         <div class="container-xxl py-5">

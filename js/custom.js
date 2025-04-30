@@ -453,3 +453,55 @@ document.addEventListener("DOMContentLoaded", function () {
         console.error("Slider or buttons not found. Check your HTML structure.");
     }
 });
+// To hide the watermark spline
+  window.onload = () => {
+    const viewer = document.querySelector('spline-viewer');
+    const shadow = viewer.shadowRoot;
+    const logo = shadow?.querySelector('#logo');
+    if (logo) logo.remove(); // 👀 Only works if Spline allows it
+  };
+
+// Scroll Reveal Text Sections Start
+  gsap.registerPlugin(ScrollTrigger)
+
+const splitTypes = document.querySelectorAll('.reveal-type')
+
+splitTypes.forEach((char) => {
+  const bg = char.dataset.bgColor
+  const fg = char.dataset.fgColor
+
+  const text = new SplitType(char, { types: 'chars' })
+
+  gsap.fromTo(
+    text.chars,
+    { color: bg },
+    {
+      color: fg,
+      duration: 0.3,
+      stagger: 0.02,
+      scrollTrigger: {
+        trigger: char,
+        start: 'top 80%',
+        end: 'top 20%',
+        scrub: true,
+        toggleActions: 'play play reverse reverse',
+      },
+    }
+  )
+})
+
+// Lenis Smooth Scroll
+const lenis = new Lenis()
+
+lenis.on('scroll', (e) => {
+  // Optional: log scroll data
+  // console.log(e)
+})
+
+function raf(time) {
+  lenis.raf(time)
+  requestAnimationFrame(raf)
+}
+requestAnimationFrame(raf)
+
+// Scroll Reveal Text Sections end
