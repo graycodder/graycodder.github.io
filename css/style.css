@@ -346,22 +346,24 @@ spline-viewer {
 }
 
 /* New Toggle icon real now Start */
+/* Base style */
 .navbar-toggler-icon {
     position: relative;
     width: 24px;
-    height: 4px;
+    height: 2px;
     background-color: white;
     display: block;
     transition: all 0.3s ease-in-out;
     box-shadow: 0 6px 0 0 white, 0 12px 0 0 white;
-    margin-top: -5px; /* 👈 move it UP */
 }
 
-/* Animate toggle (optional but trendy) */
+/* Default: Hamburger */
 .navbar-toggler.collapsed .navbar-toggler-icon {
+    background-color: white;
     box-shadow: 0 6px 0 0 white, 0 12px 0 0 white;
 }
 
+/* Opened: Cross (X) */
 .navbar-toggler:not(.collapsed) .navbar-toggler-icon {
     background-color: transparent;
     box-shadow: none;
@@ -387,6 +389,7 @@ spline-viewer {
     top: 0;
     transform: rotate(-45deg);
 }
+
 /* New Toggle icon real now end */
 .logo{ 
     width: 25%;
