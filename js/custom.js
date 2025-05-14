@@ -505,6 +505,8 @@ function raf(time) {
 requestAnimationFrame(raf)
 
 // Scroll Reveal Text Sections end
+
+//Animated custom services section start
 document.addEventListener("DOMContentLoaded", function () {
     const lenis = new Lenis();
   
@@ -572,4 +574,4 @@ document.addEventListener("DOMContentLoaded", function () {
       observer.observe(service);
     });
   });
-  
+//Animated custom services section End
