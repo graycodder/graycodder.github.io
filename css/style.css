@@ -2763,38 +2763,46 @@ summary::marker {
     }
 
     #page5-right > p {
+        font-family: gilroy;
         font-size: 2.7vw;
     }
 
     #page5-right > p span {
+        font-family: gilroy;
         width: 25vw;
         height: 1vw;
     }
 
     #page5-content h1 {
+        font-family: gilroy;
         font-size: 4vw;
     }
 
     #page5-content #flex h4 {
+        font-family: gilroy;
         font-size: 1.6vw;
         padding: 8px 16px;
     }
 
     .page5-elem {
+        font-family: gilroy;
         flex-direction: column;
         gap: 2vh;
     }
 
     .page5-elem p {
+        font-family: gilroy;
         width: 100%;
         font-size: 1.3vw;
     }
 
     .page5-elem h3 {
+        font-family: gilroy;
         font-size: 2.4vw;
     }
 
     .page5-elem i {
+        font-family: gilroy;
         font-size: 1.5vw;
     }
 }
@@ -2811,32 +2819,39 @@ summary::marker {
     }
 
     #page5-right > p {
+        font-family: gilroy;
         font-size: 4vw;
     }
 
     #page5-right > p span {
+        font-family: gilroy;
         height: 2vw;
         width: 35vw;
     }
 
     #page5-content h1 {
+        font-family: gilroy;
         font-size: 6vw;
     }
 
     #page5-content #flex h4 {
+        font-family: gilroy;
         font-size: 3vw;
         padding: 6px 14px;
     }
 
     .page5-elem h3 {
+        font-family: gilroy;
         font-size: 4vw;
     }
 
     .page5-elem p {
+        font-family: gilroy;
         font-size: 2.8vw;
     }
 
     .page5-elem i {
+        font-family: gilroy;
         font-size: 3vw;
     }
 }
@@ -2853,15 +2868,18 @@ summary::marker {
     }
 
     #page5-right > p {
+        font-family: gilroy;
         font-size: 4.5vw;
     }
 
     #page5-right > p span {
+        font-family: gilroy;
         height: 2vw;
         width: 40vw;
     }
 
     #page5-content h1 {
+        font-family: gilroy;
         font-size: 7vw;
     }
 
@@ -2870,6 +2888,7 @@ summary::marker {
     }
 
     #page5-content #flex h4 {
+        font-family: gilroy;
         font-size: 3.2vw;
         padding: 5px 10px;
     }
@@ -2880,14 +2899,17 @@ summary::marker {
     }
 
     .page5-elem h3 {
+        font-family: gilroy;
         font-size: 5vw;
     }
 
     .page5-elem p {
+        font-family: gilroy;
         font-size: 3.5vw;
     }
 
     .page5-elem i {
+        font-family: gilroy;
         font-size: 4vw;
     }
 }
