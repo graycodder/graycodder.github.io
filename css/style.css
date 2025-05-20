@@ -2916,6 +2916,7 @@ summary::marker {
 }
 /* content section page5 product End */
 
+/* START: Featured Projects Section */
 .projects-completed {
   /* background: url('../images/backg_prjoct.jpeg') no-repeat center center/cover; */
   padding: 50px 20px;
@@ -2999,3 +3000,56 @@ summary::marker {
   height: 28px;
   display: inline-block;
 }
+/* --- Media Queries for Better Responsiveness --- */
+
+@media (max-width: 768px) {
+  .projects-completed {
+    padding: 40px 15px;
+  }
+
+  .projects-completed h2 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+
+  .projects-completed .image-container {
+    height: 160px;
+  }
+
+  .projects-completed .card-content h3 {
+    font-size: 0.95rem;
+  }
+
+  .projects-completed .card-content .btn {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-completed {
+    padding: 30px 10px;
+  }
+
+  .projects-completed h2 {
+    font-size: 1.25rem;
+  }
+
+  .projects-completed .image-container {
+    height: 140px;
+  }
+
+  .projects-completed .card-content {
+    padding: 15px;
+  }
+
+  .projects-completed .card-content h3 {
+    font-size: 0.9rem;
+  }
+
+  .projects-completed .card-content .btn {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+}
+/* End: Featured Projects Section */
+
